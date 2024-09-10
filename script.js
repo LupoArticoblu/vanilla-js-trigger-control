@@ -11,8 +11,8 @@ class Explosion{
   constructor(x,y){
     this.spriteWidth = 200;
     this.spriteHeight = 179;
-    this.width = this.spriteWidth * 7;
-    this.height = this.spriteHeight * 7;
+    this.width = this.spriteWidth / 2;
+    this.height = this.spriteHeight / 2;
     this.x = x;
     this.y = y;
     this.image = new Image();
