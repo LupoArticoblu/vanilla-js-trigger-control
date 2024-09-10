@@ -25,11 +25,15 @@ class Explosion{
   }
 
   update(){
+    // Se siamo al primo frame (frame === 0), allora suona il suono dell'esplosione.
     if (this.frame === 0) {
       this.sound.play();
     }
+
+    // Incrementa il timer interno dell'esplosione.
     this.timer++;
 
+    // Se il timer   multiplo di 10 (ad esempio 10, 20, 30, ...), allora incrementa il frame dell'esplosione. Ci   per mostrare l'animazione dell'esplosione.
     if(this.timer % 10 === 0){
       this.frame++;
     }
